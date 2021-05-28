@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/style.css" rel="stylesheet">     <!-- Link html page to css file -->
+    </head>
+    <body>    
+        <center>     <!-- Center all content -->
+            <!-- Title for page -->
+            <div class='cont'>
+                <h2>Covid-19 X-RAY <br> Scanner</h2>
+            </div>
+
+            <!-- Navigation bar -->
+            <header>
+                <div class="nav">
+                    <nav>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="info.html">Covid Info</a></li>
+                    </nav>
+                </div>  
+            </header>
+
+            <!-- Welcoming sentence -->
+            <h3> 
+                Welcome to the COVID-19 x-ray scanner
+                <br> Upload a chest x-ray image below to see if you have COVID
+            </h3>
+
+            <!-- Example image -->
+            <div class='desc'>
+                <img src="/static/Site Images/x-ray imgs/Normal-15.png">
+            </div>
+
+            <!-- Upload button class -->
+            <div class="buttons">
+                <!-- Create buttons to allows users to select image from computer then submit-->
+                <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
+                    <input type="file" name='image' class='btn'>
+                    <input type="submit" class='btn'> 
+                </form>
+            </div>
+
+    </center>
+
+    </body>
+</html>

@@ -1,0 +1,239 @@
+
+/* Stlying to displays results on prediction page */
+h1{
+    font-size: 4.5vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0px;
+    margin-top: 1.5vw;     /* vw used as a unit of scale throughout this css file because it makes content dependent on screen size */
+    color: lightgrey;
+}
+
+
+body {
+    /* background-color: #8be77fc0; */
+    /* background-color: #2c2c2c; */
+    margin : 0px;
+    background-image: url("Site Images/x-ray\ background.png");     /* Apply background image */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+/* Styling of titles for each page */
+h2{
+    /* font-size: 75px; */
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+/* Styling for welcoming sentence */
+h3{
+    /* font-size: 21px; */
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    background-color: rgba(2, 85, 110, 0.8);
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+/* Styling for upload buttons on home page */
+.btn {
+    background: #3DF6A3; 
+    background: rgba(0, 141, 47, 0.8);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 1vw;
+    font-weight: 100;
+    padding: 1vw;
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 5px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-top: 0px;
+    margin-bottom: 2.5vw;
+} 
+
+/* Styling for when hoving over buttons */
+.btn:hover {
+    border: solid #FFFFFF 1px;
+    background: #CAD01E;
+    background-image: -webkit-linear-gradient(top, #06b600, #06b600);
+    background-image: -moz-linear-gradient(top, #06b600, #06b600);
+    background-image: -ms-linear-gradient(top, #06b600, #06b600);
+    background-image: -o-linear-gradient(top, #06b600, #06b600);
+    background-image: linear-gradient(to bottom, #06b600, #06b600);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Div class for titles */
+.cont{
+    background-color: #000000;
+    /* height: 220px; */
+    padding: 5.5vw 0vw;
+    margin-bottom: 0px;
+    background-image: url("Site Images/covid-cells image.jpg");
+    background-size: 100% auto;
+}
+
+/* Div class for prediction page title */
+.cont2{
+    background-color: #000000;
+    /* height: 220px; */
+    padding: 5.5vw 0vw;
+    margin-bottom: 0px;
+    background-image: url("Site Images/covid-cells image.jpg");
+    background-size: 100% auto;
+    background-position: bottom;
+}
+
+/* Home page image class */
+.desc {
+    margin: 15px;
+    padding-top: 0px;
+
+}
+
+/* Home page image */
+.desc img {
+    width: 20vw;
+    height: 20vw;
+    padding: 1.5vw;
+}
+
+span{
+    color: white; 
+
+}
+
+p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* margin-left: 250px;
+    margin-right: 250px; */
+
+}
+
+/* Styling for navigation bar within header */
+header{
+    background: #3DF6A3;
+    background-image: -webkit-linear-gradient(top, #019262a9, #00583b);
+    background-image: -moz-linear-gradient(top, #019262a9, #00583b);
+    background-image: -ms-linear-gradient(top, #019262a9, #00583b);
+    background-image: -o-linear-gradient(top, #019262a9, #00583b);
+    background-image: linear-gradient(to bottom, #019262a9, #00583b);
+    width: 100%;
+    height: 3.2vw;
+    /* height: 4.6vw; */
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5vw;
+
+    position: relative;
+    padding: 1vw 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* font-size: 17px; */
+    font-size: 1.3vw;
+}
+
+nav a:hover {
+    color: darkgray;
+}
+
+/* before hovering over nav bar state */
+nav a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.about {
+    background-image: url("Site Images/covid-cells image.jpg");
+    background-color: rgba(255, 255, 2555, 0.5);
+    background-blend-mode: lighten;
+    
+}
+
+/* information classes for about and info pages */
+.AboutDesc {
+    /* margin: 40px 350px; */
+    margin: 2vw 30vw;
+    background-color: rgb(0, 98, 128, 0.8);
+    padding: 1vw;
+    background-size: 100% auto;
+}
+
+.AboutDesc p{
+    padding: 1.5vw;
+    font-size: 1.7vw;
+}
+
+/* class for predictions of each class */
+.result {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2vw;
+    /* margin: 25px 200px; */
+    /* margin: 25% 20%;
+    margin-top: 2%; */
+
+    margin: 2vw 20vw;
+
+}
+
+/* size of displayed input image */
+.result img {
+    width: 20vw;
+}
+
+
+

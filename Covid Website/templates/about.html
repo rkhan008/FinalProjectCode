@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">     <!-- Link html page to css file -->
+    </head>
+    <body>    
+        <center>
+            <!-- Title for page -->
+            <div class='cont'>     
+                <h2>About Page</h2>
+            </div>
+
+            <!-- Navigation bar -->
+            <header>
+                <div class="nav">
+                    <nav>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="info.html">Covid Info</a></li>
+                    </nav>
+                </div>  
+            </header>
+            
+        </center>
+
+            <!-- Brief description about how the model works -->
+            <div class="AboutDesc">
+                <p> 
+                    This COVID-19 scanner works by taking an x-ray scan image as the input.
+                    When an input image is recieved, the image is preprocessed 
+                    and then passed through a convolutional neural network. The network 
+                    then predicts the probability of the individual having covid. 
+                    <br><br>
+                    After an image is uploaded and the submit button is clicked, the website displays the final verdict of the model.
+                    A 'Covid: Positive' output would suggest 
+                    the individual in the x-ray scan had covid at the time of the scan. 
+                    A negative result would suggest the individual was free of covid at the time.
+                    <br><br>
+                    Below the final verdict you will find the exact probabilities for both possibilities (Covid or Normal).
+                    You will also find your image at the bottom of the page. 
+                    <br><br>
+                    This covid scanner works best with square (equal length and width) png images. 
+
+                </p>
+
+            </div>
+    </body>
+</html>
