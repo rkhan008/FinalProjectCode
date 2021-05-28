@@ -9,3 +9,4 @@ The dataset can be found and downloaded from the following link - https://www.ka
 **Accessing website code** <br>
 To run the website code, you will need a code editor that is compatible with Python (e.g. Visual Studio Code). you will then be required to download all the libraries specified within the 'requirements.txt' file. This file can be found within the 'Covid Website' folder. You can pip install the .txt file to download all the libraries. Once all the libraries have been installed, you may wish to run the website locally by running the app.py file.
 
+The folder ‘Website test images’ contains x-ray images not used during training. You may wish to test the functionality of the website using these input images. 
